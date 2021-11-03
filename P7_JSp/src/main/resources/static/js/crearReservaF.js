@@ -1,7 +1,11 @@
-function crearReservaF(){
+function crearReservaF() {
     let reserva = {
-        computer:  $("#selecCom").val(),
-        client: +$("#inputIdCliente").val(),
+        computer: {
+            id: +$("#selectCom").val()
+        },
+        client:{
+            idClient: +$("#inputIdCliente").val()
+        },
         startDate: $("#inputFechaInicio").val(),
         devolutionDate: $("#inputFechaEntrega").val()
     };
@@ -16,8 +20,8 @@ function crearReservaF(){
             "Content-Type": "application/json"
         },
         data: JSON.stringify(reserva),
-        statusCode:{
-            201:function(){
+        statusCode: {
+            201: function () {
                 alert('La reserva se ha registrado de manera correcta');
             }
         },

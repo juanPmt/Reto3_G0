@@ -43,7 +43,7 @@ function verReservaF(){
                        <td>${items[i].client.email}</td>
                        <td>${items[i].score}</td>
                        <td>
-                        <a class="btn-primary btn-xs"  href="crearReview.html?id=${items[i].id}">Calificar</a>
+                        <a class="btn btn-xs"  href="crearReview.html?id=${items[i].id}">Calificar</a>
                    </td>                
                     </tr>`;
         }

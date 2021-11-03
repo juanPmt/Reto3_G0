@@ -11,10 +11,11 @@ let dropDownCom = function () {
             let select = document.getElementById("selectCom");
 
             for (let i = 0; i < respuesta.length; i++) {
-                let opt = respuesta[i].name;
+                let name = respuesta[i].name;
+                let brand = respuesta[i].brand;
                 let cod = respuesta[i].id;
                 let el = document.createElement("option");
-                el.text = opt;
+                el.text = brand+" "+name;
                 el.value = cod;
                 select.add(el);
             }
