@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Demo Login</title>
+        <title>Autenticación</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
         <base href="/"/>
@@ -13,15 +13,15 @@
     </head>
 
     <body>
-        <h1>#MisionTIC 2022</h1>
+        <h1>#MisionTIC 2022-Reto 3</h1>
         <div class="container unauthenticated">
             Para iniciar sesión con Github:
-            <a href="/oauth2/authorization/github">haz click</a>
+            <a class="btn btn-success btn-sm" href="/oauth2/authorization/github">haz click</a>
         </div>
         <div class="container authenticated" style="display:none">
             Autenticado como: <span id="user"></span>
             <p>
-                <a href="inicio.html">Ir a la pagina privada</a>
+                <a class="btn btn-success btn-sm" href="inicio.html">Ir a la pagina principal</a>
             </p>
             <div>
                 <button onClick="logout()" class="btn btn-primary">Logout</button>
