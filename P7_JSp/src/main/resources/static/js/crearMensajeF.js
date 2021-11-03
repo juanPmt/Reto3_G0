@@ -1,7 +1,9 @@
 function crearMensajeF(){
     let mensaje = {
-        computer: $("#selecComt").val(),
-        messageText: $("#Mensaje").val(),
+        computer:{
+            id: +$("#selectCom").val()
+        },
+        messageText: $("#Mensaje").val()
     };
 
     console.log("Se va a registrar el mensaje para el computador", mensaje.computer);

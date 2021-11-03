@@ -1,10 +1,12 @@
-function crearComputadorF(){
+let crearComputadorF=function(){
     let computador = {
         brand:  $("#ValoresMarca").val(),
         name: $("#inputNombreCom").val(),
         year: +$("#inputAño").val(),
-        description: $("#inputNombreCom").val(),
-        category: $("#selecCatCom").val()
+        description: $("#inputDescripcionCom").val(),
+        category:{
+            id: +$("#selectCat").val()
+        }
     };
 
     console.log("Se va a registrar el equipo", computador.name);
@@ -23,6 +25,4 @@ function crearComputadorF(){
             }
         },
     });
-    
-}
-
+};

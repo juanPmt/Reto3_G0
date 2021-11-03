@@ -38,7 +38,7 @@ function verComputadorF(){
                        <td>${items[i].brand}</td> 
                        <td>${items[i].name}</td>
                        <td>${items[i].year}</td>
-                       <td>${items[i].category}</td>
+                       <td>${items[i].category.name}</td>
                        <td>${items[i].description}</td>                   
                     </tr>`;
         }

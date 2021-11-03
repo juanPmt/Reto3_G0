@@ -34,8 +34,7 @@ function verMensajeF(){
            
             tablaM +=`<tr>
                        <td>${items[i].messageText}</td> 
-                       <td>${items[i].computer}</td>
-                       <td>${items[i].client}</td>                  
+                       <td>${items[i].computer.name}</td>                 
                     </tr>`;
         }
         tablaM +=`</table>`;
